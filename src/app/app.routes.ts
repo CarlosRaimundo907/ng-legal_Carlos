@@ -5,6 +5,7 @@ import { Home } from './home/home';
 import { Contacts } from './contacts/contacts';
 import { About } from './about/about';
 import { New } from './new/new';
+import { SeedData } from './seed-data/seed-data';
 
 // Nome do site para compor o `title`
 const siteName = "NgLegal";
@@ -18,6 +19,9 @@ export const routes: Routes = [
     { path: 'contacts', component: Contacts, title: `${siteName} - Faça Contato` },
     { path: 'about', component: About, title: `${siteName} - Sobre` },
     { path: 'new', component: New, title: `${siteName} - Cadastro` },
+     { path: 'seed-data', component: SeedData, title: `${siteName} - Cadastro de coisas` },
+
+    // Pagina escondida que adiciona coisas aleatórais ao Firebase
 
     // Rota coringa para redirecionar caminhos inválidos ← Sempre a última
     { path: '**', redirectTo: '/home' }
